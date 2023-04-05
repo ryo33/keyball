@@ -35,5 +35,17 @@
       [{"r":-20,"rx":10.15,"y":-2.46,"x":-2.18},         "7,5" ],
       [{"r":-10,"rx":11.15,"ry":5.5,"y":-2.24,"x":-2.4}, "7,4" ]
     ]
-  }
+  },
+  "customKeycodes": [
+    { "shortName": "KBC_RST", "name": "Reset keyball state to default" },
+    { "shortName": "KBC_SAVE", "name": "Save keyball state to EEPROM" },
+    { "shortName": "CPI_I100", "name": "Increase CPI by 100" },
+    { "shortName": "CPI_D100", "name": "Decrease CPI by 100" },
+    { "shortName": "CPI_I1K", "name": "Increase CPI by 1000" },
+    { "shortName": "CPI_D1K", "name": "Decrease CPI by 1000" },
+    { "shortName": "SCRL_TO", "name": "Toggle scroll mode" },
+    { "shortName": "SCRL_MO", "name": "Momentary activate scroll mode" },
+    { "shortName": "SCRL_DVI", "name": "Increment scroll divider" },
+    { "shortName": "SCRL_DVD", "name": "Decrement scroll divider" }
+  ]
 }
