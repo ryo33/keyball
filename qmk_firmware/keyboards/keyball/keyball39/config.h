@@ -28,6 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION     COL2ROW
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
+// My typing is fast
+#define PERMISSIVE_HOLD
 
 // Split parameters
 #define SOFT_SERIAL_PIN         D2
