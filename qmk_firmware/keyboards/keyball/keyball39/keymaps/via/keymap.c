@@ -24,10 +24,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // keymap for default (VIA)
   [0] = LAYOUT_universal(
-    KC_Q      , KC_W     , KC_F     , KC_P     , KC_G     ,                                   KC_Y     , KC_U     , KC_U     , KC_Y     , KC_SCLN  ,
-    KC_A      , KC_R     , KC_S     , KC_T     , KC_D     ,                                   KC_H     , KC_N     , KC_E     , KC_I     , KC_O     ,
-    KC_Z      , KC_X     , KC_C     , KC_V     , KC_B     ,                                   KC_J     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  ,
-    MO(3)     ,KC_MS_BTN2,KC_MS_BTN1, MO(1)    ,LSFT_T(KC_SPC),LCTL_T(KC_TAB),RCTL_T(KC_BSPC),LSFT_T(KC_ENT),_______,_______,_______,KC_LGUI
+    KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                    KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     ,
+    KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                    KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  ,
+    KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                    KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  ,
+    MO(3)    ,KC_MS_BTN2,KC_MS_BTN1, MO(7)    ,LSFT_T(KC_SPC),LCTL_T(KC_TAB),RCTL_T(KC_BSPC),LSFT_T(KC_ENT),_______, _______  , _______  , KC_LGUI
   ),
 
   [1] = LAYOUT_universal(
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [7] = LAYOUT_universal(
     _______   , _______ , _______  , _______  , _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
     _______   , _______ , _______  , _______  , _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
-    _______   , _______ , _______  , _______  , _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
+    _______   , SCRL_MO ,KC_MS_BTN2,KC_MS_BTN1, _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
     _______   , _______ , _______  , _______  , _______  , _______  ,              _______  , _______  , _______  , _______  , _______  , _______
   ),
 };
