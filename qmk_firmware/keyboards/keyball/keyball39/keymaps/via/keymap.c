@@ -20,14 +20,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "quantum.h"
 
+#define LS_SPC LSFT_T(KC_SPC)
+#define LC_TAB LCTL_T(KC_TAB)
+#define RC_BSPC RCTL_T(KC_BSPC)
+#define RS_ENT RSFT_T(KC_ENT)
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // keymap for default (VIA)
   [0] = LAYOUT_universal(
-    KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                    KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     ,
-    KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                    KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  ,
-    KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                    KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  ,
-    MO(3)    ,KC_MS_BTN2,KC_MS_BTN1, MO(7)    ,LSFT_T(KC_SPC),LCTL_T(KC_TAB),RCTL_T(KC_BSPC),LSFT_T(KC_ENT),_______, _______  , _______  , KC_LGUI
+    LALT(KC_Q), KC_W     , KC_E     , KC_R     , KC_T     ,                                   KC_Y     , KC_U     , KC_I     , KC_O     , LALT(KC_P)   ,
+    LCTL(KC_A), KC_S     , KC_D     , KC_F     , KC_G     ,                                   KC_H     , KC_J     , KC_K     , KC_L     , RCTL(KC_SCLN),
+    LSFT(KC_Z), KC_X     , KC_C     , KC_V     , KC_B     ,                                   KC_N     , KC_M     , KC_COMM  , KC_DOT   , RSFT(KC_SLSH),
+    MO(3)     ,KC_MS_BTN2,KC_MS_BTN1, MO(7)    , LS_SPC   , LC_TAB  ,              RC_BSPC  , RS_ENT   , _______  , _______  , _______  , KC_LGUI
   ),
 
   [1] = LAYOUT_universal(
@@ -73,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [7] = LAYOUT_universal(
-    _______   , _______ , _______  , _______  , _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
+    KC_LNG2   , _______ , _______  , _______  , KC_LNG1  ,                                    _______  , _______  , _______  , _______  , _______  ,
     _______   , _______ , _______  , _______  , _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
     _______   , SCRL_MO ,KC_MS_BTN2,KC_MS_BTN1, _______  ,                                    _______  , _______  , _______  , _______  , _______  ,
     _______   , _______ , _______  , _______  , _______  , _______  ,              _______  , _______  , _______  , _______  , _______  , _______
